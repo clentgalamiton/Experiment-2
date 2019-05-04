@@ -1,0 +1,20 @@
+#include<iostream>
+	using namespace std;
+
+	int main()
+	{
+	    double c;
+	    int b;
+	    
+	    cout<<"How much is your water gallon consumption? ";
+	    cin>> c;
+	    cout<<"How much is your unpaid balance? Php ";
+	    cin>> b;
+	    
+	    if (b==0)
+	    cout<<"Your water bill is " << (35 + (c*1.10));
+	    else 
+	    cout<< "Your water bill is " << (55 + (c*1.10));
+
+	    return 0;
+		}
