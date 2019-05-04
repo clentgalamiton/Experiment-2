@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main ()
+{
+	int row, column;
+	
+	cout<<"Enter number of rows: "; 
+  cin >>row;
+	cout<<"Enter number of columns: ";
+  cin >>column;
+	
+	for (int y=1; y <= column; y++){
+	
+    for (int y=1; y <= row; y++){
+    	cout<<"*";
+}cout<<endl;
+}
+	return 0;
+}
