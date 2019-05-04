@@ -1,0 +1,34 @@
+#include<iostream>
+	using namespace std;
+	int main()
+	{
+	    	int pack;
+		    int hours;
+		
+cout<< "What package did you purchase? Press the corresponding key (1 if Package A; 2 if Package B; 3 if Package C) ";
+		cin>>pack;
+		cout<<"How many hours did you use this month? ";
+		cin>>hours;
+		
+		switch(pack)
+		{ 
+		    case 1:
+		    if (hours>0 && hours<=10)
+		    cout<< "With package A your monthly due is Php 995";
+		    else if (hours>10)
+		    cout<< "With package A your monthly due is Php " << (((hours-10)*20) + 995) ;
+		    break;
+		    
+		    case 2:
+		    if (hours>0 && hours<=20)
+		    cout<< "With package B your monthly due is Php 1495";
+		    else if (hours>20)
+            cout<< "With package B your monthly due is Php " << (((hours-20)*10) + 1495);
+		    break;
+		    
+		    case 3:
+		    cout<<"With package C your monthly due is Php 1995";
+		}
+		   
+		return 0;
+		}
