@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+    
+    cout<< "Enter a number: ";
+    cin >> number;
+    cout<< "Multiplication table of " << number << ":";
+    
+    for (int x=1; x<=10; x++)
+    cout << "\n" << x << "*" << number << "=" << x*number;
+    
+    return 0;
+    
+}
